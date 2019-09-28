@@ -1,0 +1,70 @@
+.main-view{
+    height: 100%;
+    &>.ivu-layout{
+      height: 100%;
+    }
+    .ivu-layout-header{
+      padding: 0;
+      .layout-logo{
+        color: #fff;
+        font-size: 24px;
+        float: left;
+        width: 200px;
+        text-align: center;
+      }
+      .layout-nav{
+        float: right;
+        margin-right: 32px;
+      }
+      .ivu-dropdown{
+        .ivu-dropdown-rel{
+          color: #fff;
+          cursor: pointer;
+          font-size: 14px;
+        }
+      }
+    }
+    .ivu-layout-sider{
+      .ivu-menu{
+        .ivu-menu-item{
+          white-space: nowrap;
+          span{
+            display: inline-block;
+            overflow: hidden;
+            width: 110px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: bottom;
+            transition: width .2s ease .2s;
+          }
+          i{
+            transform: translateX(0px);
+            transition: font-size .2s ease, transform .2s ease;
+            vertical-align: middle;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .main-layout {
+      padding: 0 16px 16px;
+      .ivu-breadcrumb{
+        margin: 12px 0;
+      }
+      .ivu-layout-content{
+        height: 100%;
+        position: relative;
+      }
+    }
+    .ivu-page{
+      text-align: center;
+      margin-top: 20px;
+    }
+    .layout-card{
+      min-height: e("calc(100vh - 125px)");
+    }
+  }
+  .has-summary .ivu-table-footer{
+    height: auto;
+  }
+  
